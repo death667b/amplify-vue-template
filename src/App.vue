@@ -6,14 +6,12 @@ import "@aws-amplify/ui-vue/styles.css";
 
 <template>
   <main>
-    <Todos />
-  </main>
-      
-  <authenticator>
+    <authenticator>
     <template v-slot="{ signOut }">
       <Todos />
       <button @click="signOut">Sign Out</button>
     </template>
   </authenticator>
+  </main>
 </template>
 
